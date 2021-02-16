@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-16T18:40:50.536Z" agent="5.0 (Windows)" etag="zpZ5-TX0qOITSOv00s-t" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-16T18:44:21.523Z" agent="5.0 (Windows)" etag="mtw5xequ6aB1jihO-ot4" version="14.1.8" type="github">
   <diagram id="CYzmzR_TMUYCj8WLfeWa" name="Page-1">
-    <mxGraphModel dx="1757" dy="1896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="848" dy="1343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,10 +40,10 @@
             <mxPoint x="510" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-11" value="UserID-Field" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;" vertex="1" parent="1">
+        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-11" value="UserID-Field" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8000;" vertex="1" parent="1">
           <mxGeometry x="80" y="320" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-12" value="Password-Field" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;" vertex="1" parent="1">
+        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-12" value="Password-Field" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8000;" vertex="1" parent="1">
           <mxGeometry x="80" y="374" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-13" value="LogIn-Button" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;" vertex="1" parent="1">
@@ -376,7 +376,7 @@
           <mxGeometry x="1320" y="90" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-74" value="Button" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;" vertex="1" parent="1">
-          <mxGeometry x="2100" y="250" width="160" height="40" as="geometry" />
+          <mxGeometry x="1860" y="510" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-75" value="Dropdown-Menu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="1520" y="780" width="160" height="40" as="geometry" />
@@ -397,13 +397,13 @@
           <mxGeometry x="1320" y="140" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-83" value="widget" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0080;" vertex="1" parent="1">
-          <mxGeometry x="2100" y="190" width="160" height="40" as="geometry" />
+          <mxGeometry x="1860" y="460" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-84" value="&lt;font color=&quot;#000000&quot;&gt;Further thoughts&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFF00;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="440" y="10" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-86" value="Button" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;" vertex="1" parent="1">
-          <mxGeometry x="2100" y="310" width="160" height="40" as="geometry" />
+          <mxGeometry x="1860" y="560" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-88" value="Button with Components " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00CC66;" vertex="1" parent="1">
           <mxGeometry x="440" y="60" width="160" height="40" as="geometry" />
@@ -510,6 +510,21 @@
         </mxCell>
         <mxCell id="Xn9P-yLoD2EliFYj8Yuh-107" value="InputField" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8000;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="610" y="10" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-108" value="&lt;div&gt;Scan Qr-Code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Input Project Number&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4C0099;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="90" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-109" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xn9P-yLoD2EliFYj8Yuh-73" target="Xn9P-yLoD2EliFYj8Yuh-108">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1610" y="100" as="sourcePoint" />
+            <mxPoint x="1750" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xn9P-yLoD2EliFYj8Yuh-110" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xn9P-yLoD2EliFYj8Yuh-82" target="Xn9P-yLoD2EliFYj8Yuh-108">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1590" y="200" as="sourcePoint" />
+            <mxPoint x="1640" y="150" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
