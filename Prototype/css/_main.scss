@@ -1,0 +1,23 @@
+.main {
+  background: #062354;
+}
+
+.mainMenu {
+  @include flex(space-between, center, column);
+  a {
+    display: block;
+    color: white;
+    margin-top: 2rem;
+    width: 90%;
+    border: black 3px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    .mainButton {
+      @include flex(center, center, column);
+      height: 12rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
