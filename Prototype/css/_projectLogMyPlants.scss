@@ -1,0 +1,41 @@
+.myPlantMenu {
+  @include flex(space-between, center, column);
+  a {
+    width: 100%;
+    color: white;
+    .mainButton {
+      @include flex(center, center, column);
+      height: 12rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+.myPlantsForm {
+  background: #062354;
+  width: 90%;
+  margin: auto;
+  // @include flex(space-between, center, column);
+}
+
+.plantInfo {
+  width: 90%;
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+
+  @include flex(center, center, row);
+  .plantInfoText {
+    padding: 2rem;
+    height: 100%;
+    color: white;
+    @include flex(space-between, flex-start, column);
+  }
+  .plantButtons {
+    padding: 2rem;
+    height: 100%;
+    @include flex(space-between, flex-start, column);
+  }
+}
