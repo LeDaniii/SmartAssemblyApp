@@ -13,22 +13,36 @@
   }
 }
 
-// .plantInfo {
-//   width: 90%;
-//   height: 20rem;
-//   border-radius: 5px;
-//   box-shadow: 3px 3px 10px black;
-
-//   @include flex(center, center, row);
-//   .plantInfoText {
-//     padding: 2rem;
-//     height: 100%;
-//     color: white;
-//     @include flex(space-between, flex-start, column);
-//   }
-//   .plantButtons {
-//     padding: 2rem;
-//     height: 100%;
-//     @include flex(space-between, flex-start, column);
-//   }
-// }
+.machineInfo {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+  @include flex(space-between, center, column);
+  .machineInfoText {
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid white;
+    @include flex(space-between, flex-start, row);
+  }
+  .logMachinesIssueBoard {
+    width: 100%;
+    @include flex(space-between, flex-start, column);
+  }
+  .closedIssues {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .openIssues {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .urgentIssues {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

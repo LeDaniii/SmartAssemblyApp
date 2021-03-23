@@ -1,0 +1,12 @@
+.machineInfo {
+  .machineInfoToDo {
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid white;
+    @include flex(space-between, flex-start, column);
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
