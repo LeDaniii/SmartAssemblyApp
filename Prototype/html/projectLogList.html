@@ -99,20 +99,44 @@
     <!-- --------- Navigation End ---------- -->
     <!-- --------- Add ToDo sart ---------- -->
     <div class="myPlantsForm mt-5 mb-3">
-      <form>
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter ToDo"
-          />
+      
+          <div class="logListSortButtons">
+        <button type="submit" class="btn btn-success col-3">
+          <h2 class="mt-2"><i class="fas fa-sort-amount-down"></i></h2>
+        </button>
+        <button type="submit" class="btn btn-warning col-3">
+          <h2 class="mt-2"><i class="fas fa-sort-amount-down"></i></h2>
+        </button>
+        <button type="submit" class="btn btn-danger col-3">
+          <h2 class="mt-2"><i class="fas fa-sort-amount-down"></i></h2>
+        </button>
         </div>
+      <p>
+  <button class="btn btn-success col-12 mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <h2 class="mt-2">Add ToDo <i class="fas fa-plus"></i></h2>
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+        <form>
+            <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Urgent</option>
+            <option value="1">Not Urgent</option>
+            </select>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Assembly Unit</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"            placeholder="100-00">
+            </div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">The Problem</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
         <button type="submit" class="btn btn-success col-12 mt-4">
           <h2 class="mt-2">Add ToDo <i class="fas fa-plus"></i></h2>
         </button>
       </form>
+  </div>
+</div>
     </div>
     <!-- --------- Add ToDo end ---------- -->
     <div class="logMachinesMenu">
@@ -131,7 +155,7 @@
           <p>New ones are in order, solution for now -> after every third measurement there will be a master calibration</p>
         </div>
         <div class="plantButtons col-12">
-            <button type="button" class="btn btn-warning btn-lg col-12 mb-2">
+            <button type="button" class="btn btn-danger btn-lg col-12 mb-2">
               <h1 class="mt-2">
                 Move to urgent <i class="fas fa-arrow-right"></i>
               </h1></button>
@@ -145,7 +169,7 @@
               </h1></button>
         </div>
       </div>
-      <div class="machineInfo bg-dark mt-3 mb-3">
+      <div class="machineInfo bg-success mt-3 mb-3">
         <div class="machineInfoText col-6">
           <h1>2</h1>
           <h1>12.04.2021</h1>
@@ -159,7 +183,7 @@
           <p>Atm, we are unable to align the skit with upper- and lower tool, waiting for the design department to get a solution. Meanwhile the machine is working we just can't show this to the customer.</p>
         </div>
         <div class="plantButtons col-12">
-            <button type="button" class="btn btn-warning btn-lg col-12 mb-2">
+            <button type="button" class="btn btn-danger btn-lg col-12 mb-2">
               <h1 class="mt-2">
                 Move to urgent <i class="fas fa-arrow-right"></i>
               </h1></button>
@@ -167,13 +191,13 @@
               <h1 class="mt-2">
                 Move to Project Chatroom <i class="far fa-comment"></i>
               </h1></button>
-            <button type="button" class="btn btn-success btn-lg col-12 ">
+            <button type="button" class="btn btn-warning btn-lg col-12 ">
               <h1 class="mt-2">
-                Job Done <i class="fas fa-check"></i>
+                Reopen Issue <i class="fas fa-arrow-up"></i>
               </h1></button>
         </div>
       </div>
-      <div class="machineInfo bg-dark mt-3 mb-3">
+      <div class="machineInfo bg-danger mt-3 mb-3">
         <div class="machineInfoText col-6">
           <h1>1</h1>
           <h1>12.04.2021</h1>
@@ -189,7 +213,7 @@
         <div class="plantButtons col-12">
             <button type="button" class="btn btn-warning btn-lg col-12 mb-2">
               <h1 class="mt-2">
-                Move to urgent <i class="fas fa-arrow-right"></i>
+                Not Urgent anymore <i class="fas fa-arrow-right"></i>
               </h1></button>
             <button type="button" class="btn btn-primary btn-lg col-12 mb-2">
               <h1 class="mt-2">

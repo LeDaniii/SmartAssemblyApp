@@ -10,3 +10,7 @@
     }
   }
 }
+
+.logListSortButtons {
+  @include flex(space-between, center, row);
+}
