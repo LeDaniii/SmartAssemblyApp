@@ -7,11 +7,29 @@ let app = express();
 app.set('view engine', 'ejs');
 
 // index pages
+// app.get('/', (req, res) => {
+//     res.render('pages/index');
+// })
+
+//  about pages
+app.get('/about', function(req, res) {
+    res.render('pages/about');
+});
+
+// index page
 app.get('/', (req, res) => {
-    res.render('pages/index');
-})
+    let mascots = [
+        { name: 'Sammy', organization: "Digitalocean", birth_year: 2012 },
+        { name: 'Tux', organization: "Linux", birth_year: 1996 },
+        { name: 'Moby Dick', organization: "Docker", birth_year: 2013 },
+    ];
+    let tagline = "No programming concept is complete withoout a cute animal mascot.";
 
-
+    res.render('pages/index', {
+        mascots: mascots,
+        tagline: tagline
+    });
+});
 
 
 
