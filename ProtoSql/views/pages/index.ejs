@@ -23,6 +23,29 @@
         </ul>
       </div>
     </main>
+    <div class="">
+      <form action="/submit_form" method="post" class="form-signin">
+        <div class="form-group">
+          <label for="text">text</label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="posts">posts</label>
+          <textarea
+            type="text"
+            class="form-control"
+            name="posts"
+            placeholder="Enter message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
     <footer><%- include('../partials/footer'); %></footer>
   </body>
