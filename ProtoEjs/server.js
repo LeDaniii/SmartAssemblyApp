@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const express = require('express');
-// const path = require('path');
+const path = require('path');
 
 // console.log(path);
 
@@ -27,6 +27,14 @@ app.get('/mainMenu', (req, res) => {
 
 app.get('/projectLogDirection', (req, res) => {
     res.render('pages/projectLogDirection');
+});
+
+app.get('/projectLogMyPlants', (req, res) => {
+    res.render('pages/projectLogMyPlants');
+});
+
+app.get('/projectLogMachines', (req, res) => {
+    res.render('pages/projectLogMachines');
 });
 
 //  ---------- Pages End ----------
