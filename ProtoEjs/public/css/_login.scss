@@ -1,0 +1,24 @@
+.logInBody {
+  background: #062354;
+  @include flex(space-between, center, column);
+}
+
+.logInSvg {
+  @include flex(space-between, center, column);
+  margin-top: 15rem;
+}
+
+.logInHeading {
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.LogInForm {
+  margin-top: 8rem;
+  width: 80%;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}

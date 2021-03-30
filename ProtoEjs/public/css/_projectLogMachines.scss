@@ -1,0 +1,48 @@
+.logMachinesMenu {
+  @include flex(space-between, center, column);
+  a {
+    width: 100%;
+    color: white;
+    .mainButton {
+      @include flex(center, center, column);
+      height: 12rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+.machineInfo {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+  @include flex(space-between, center, column);
+  .machineInfoText {
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid white;
+    @include flex(space-between, flex-start, row);
+  }
+  .logMachinesIssueBoard {
+    width: 100%;
+    @include flex(space-between, flex-start, column);
+  }
+  .closedIssues {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .openIssues {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .urgentIssues {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

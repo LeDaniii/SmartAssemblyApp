@@ -1,0 +1,19 @@
+// ------ FlexBox for faster writing -----
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// ----- import Scss -----
+@import "./global";
+@import "./navbar";
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./login";
+@import "./qr";
+@import "./projectLogMyPlants";
+@import "./projectLogMachines";
+@import "./projectLogList";
