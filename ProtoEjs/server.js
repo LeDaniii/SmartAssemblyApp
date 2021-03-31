@@ -1,6 +1,7 @@
 const mysql = require('mysql');
 const express = require('express');
 const path = require('path');
+const pages = require('./server/renderPages');
 
 // console.log(path);
 
@@ -37,9 +38,13 @@ app.get('/projectLogMachines', (req, res) => {
     res.render('pages/projectLogMachines');
 });
 
-//  ---------- Pages End ----------
+app.get('/projectLogList', (req, res) => {
+    res.render('pages/projectLogList');
+});
 
+// ---------- Pages End ----------
 
+// ---------- App start ----------
 app.listen('3000', () => {
     console.log('server started on port 3000')
 });
