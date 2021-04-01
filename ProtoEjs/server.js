@@ -43,6 +43,33 @@ app.get('/projectLogList', (req, res) => {
 });
 
 // ---------- Pages End ----------
+// ---------- SQL start ----------
+
+
+// create connection
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'smartassemblyapp'
+});
+
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('MySql connected')
+});
+
+
+
+
+// ---------- SQL end ----------
+
+
+
+
+
 
 // ---------- App start ----------
 app.listen('3000', () => {
