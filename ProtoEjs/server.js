@@ -61,7 +61,21 @@ db.connect((err) => {
     console.log('MySql connected')
 });
 
-
+// insert todo
+app.post('/addToDo', (req, res) => {
+    let urgency = req.body.urgency;
+    let assemblyUnit = req.body.assemblyUnit;
+    let todoText = req.body.todoText;
+    let header = req.body.header;
+    let todoDate = req.body.todoDate;
+    console.log(todoDate)
+    let sql = `INSERT INTO todos (assemblyunit, tododate, header, todotext, todostatus, fk_project, fk_user) VALUES ('${assemblyUnit}', '${todoDate}', '${header}', '${todoText}', '${urgency}', '1', '1')`;
+    let query = db.query(sql, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+        res.redirect('/projectLogList')
+    })
+});
 
 
 // ---------- SQL end ----------

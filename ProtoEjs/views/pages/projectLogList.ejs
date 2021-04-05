@@ -7,7 +7,6 @@
     <%- include('../partials/navigation'); %>
     <!-- --------- Add ToDo sart ---------- -->
     <div class="myPlantsForm mt-5 mb-3">
-      
           <div class="logListSortButtons">
         <button type="submit" class="btn btn-success col-3">
           <h2 class="mt-2"><i class="fas fa-sort-amount-down"></i></h2>
@@ -26,18 +25,26 @@
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-        <form>
-            <select class="form-select mb-3" aria-label="Default select example">
+        <form action="/addTodo" method="post">
+            <select class="form-select mb-3" name="urgency"  aria-label="Default select example">
             <option selected>Urgent</option>
-            <option value="1">Not Urgent</option>
+            <option value="notUrgent">Not Urgent</option>
             </select>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Assembly Unit</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"            placeholder="100-00">
+                <input type="number" name="assemblyUnit" class="form-control" id="exampleFormControlInput1"            placeholder="100-00">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Header</label>
+                <input type="text" name="header" class="form-control" id="exampleFormControlInput1"            placeholder="What's the problem">
+            </div>
+            <div class="mb-3">
+              <label for="timepicker" class="form-label">Date</label>
+              <input class="form-control" id="timepicker" name="todoDate" type="datetime-local">
             </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">The Problem</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control" name="todoText" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
         <button type="submit" class="btn btn-success col-12 mt-4">
           <h2 class="mt-2">Add ToDo <i class="fas fa-plus"></i></h2>
