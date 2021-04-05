@@ -2,6 +2,7 @@ const mysql = require('mysql');
 const express = require('express');
 const path = require('path');
 const pages = require('./server/renderPages');
+const { resolveAny } = require('dns');
 
 // console.log(path);
 
@@ -38,9 +39,6 @@ app.get('/projectLogMachines', (req, res) => {
     res.render('pages/projectLogMachines');
 });
 
-app.get('/projectLogList', (req, res) => {
-    res.render('pages/projectLogList');
-});
 
 // ---------- Pages End ----------
 // ---------- SQL start ----------
@@ -61,6 +59,7 @@ db.connect((err) => {
     console.log('MySql connected')
 });
 
+
 // insert todo
 app.post('/addToDo', (req, res) => {
     let urgency = req.body.urgency;
@@ -77,7 +76,32 @@ app.post('/addToDo', (req, res) => {
     })
 });
 
+// render todos
 
+app.get('/projectLogList', (req, res) => {
+    db.getConnection((err, connection) => {
+        if (err) throw err;
+        let sql = 'SELECT * FROM todos';
+        connection.query(sql, (err, result) => {
+            connection.release(); //return to connection pool
+
+            if (!err) {
+                res.send(result)
+            } else {
+                console.log(err)
+            }
+        })
+    })
+    // res.render('pages/projectLogList');
+});
+
+
+    // 
+    // let query = db.query(sql, (err, result) => {
+    // if (err) throw err;
+    // console.log(result);
+    // })
+    // render page
 // ---------- SQL end ----------
 
 
