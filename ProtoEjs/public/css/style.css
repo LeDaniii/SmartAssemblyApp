@@ -427,4 +427,12 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+.hiddenId {
+  display: none;
+}
+
+.urgent {
+  background: #dc3545;
+}
 /*# sourceMappingURL=style.css.map */

@@ -14,3 +14,11 @@
 .logListSortButtons {
   @include flex(space-between, center, row);
 }
+
+.hiddenId {
+  display: none;
+}
+
+.urgent {
+  background: #dc3545;
+}

@@ -140,9 +140,44 @@
               </h1></button>
         </div>
       </div>
+      <!-- #################################################################### -->
+      <!-- iterade todos start -->
+      <%= %>
+      <% todos.forEach((todo)=>{ %>
+        <div class="machineInfo <%= todo.todostatus %> mt-3 mb-3">
+        <div class="machineInfoText col-6">
+          <h1 class="hiddenId"><%= todo.todo_id%></h1>
+          <h1><%= todo.tododate%></h1>
+        </div>
+        <div class="machineInfoText col-6">
+          <h1>Assembly Unit</h1>
+          <h1><%= todo.assemblyunit%></h1>
+        </div>
+        <div class="machineInfoToDo col-6">
+          <h1><%= todo.header %></h1>
+          <p><%= todo.todotext %></p>
+        </div>
+        <div class="plantButtons col-12">
+            <button type="button" class="btn btn-warning btn-lg col-12 mb-2">
+              <h1 class="mt-2">
+                Not Urgent anymore <i class="fas fa-arrow-right"></i>
+              </h1></button>
+            <button type="button" class="btn btn-primary btn-lg col-12 mb-2">
+              <h1 class="mt-2">
+                Move to Project Chatroom <i class="far fa-comment"></i>
+              </h1></button>
+            <button type="button" class="btn btn-success btn-lg col-12 ">
+              <h1 class="mt-2">
+                Job Done <i class="fas fa-check"></i>
+              </h1></button>
+        </div>
+      </div>
+        <% }) %>
+
+      <!-- #################################################################### -->
+
       </div>
     </div>
-    <%=  %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
   </body>
