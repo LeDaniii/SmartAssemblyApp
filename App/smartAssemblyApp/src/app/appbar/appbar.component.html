@@ -1,0 +1,62 @@
+<mat-toolbar>
+  <span>Smart Assembly App</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon class="menu-icon">menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./projectLogDirection.html">Project Log</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="main">Project ChatRoom</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Anonym Help</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Attention</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">TeamLeader</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Working Abroad</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Mathematics</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Tipps and Tricks</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <a href="./mainMenu.html">Stuff we have</a>
+    </button>
+    <!-- logout andd home -->
+    <a href="main">
+      <button mat-menu-item class="text-success">
+        <mat-icon class="text-success">home</mat-icon>
+        Home
+      </button>
+    </a>
+    <a href="">
+      <button mat-menu-item class="text-danger">
+        <mat-icon class="text-danger">clear</mat-icon>
+        Logout
+      </button>
+    </a>
+  </mat-menu>
+</mat-toolbar>
