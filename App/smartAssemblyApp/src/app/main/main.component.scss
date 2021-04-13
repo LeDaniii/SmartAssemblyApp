@@ -1,0 +1,25 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.mainWrapper {
+  @include flex(space-evenly, flex-end, column);
+  // margin-top: 2rem;
+  padding: 0;
+  height: 94%;
+  a {
+    @include flex(flex-end, center, row);
+    background: #062354;
+    border-radius: 2rem 0 0 2rem;
+    padding: 1.2rem;
+    margin: 0.6rem 0 0.6rem 0;
+    width: 80%;
+    box-shadow: 3px 3px 10px black;
+    .mainMenu {
+      font-size: 1.5rem;
+    }
+  }
+}

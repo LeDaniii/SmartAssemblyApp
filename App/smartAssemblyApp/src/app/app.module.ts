@@ -13,9 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
+import { ProjectLogDirectionComponent } from './project-log-direction/project-log-direction.component';
 
 @NgModule({
-  declarations: [AppComponent, AppbarComponent, MainComponent, LoginComponent],
+  declarations: [AppComponent, AppbarComponent, MainComponent, LoginComponent, ProjectLogDirectionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
