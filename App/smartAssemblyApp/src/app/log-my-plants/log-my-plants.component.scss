@@ -1,0 +1,53 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.wrappper {
+  @include flex(flex-start, flex-end, column);
+  width: 100%;
+  height: 94%;
+
+  .mat-form-field {
+    // @include flex(center, center, row);
+    width: 75%;
+    font-size: 1.2rem;
+    margin: 1.5rem auto;
+    input {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+  .component {
+    @include flex(flex-start, flex-end, row);
+    background: #212121;
+    color: white;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 4px;
+    height: 10rem;
+    .info {
+      width: 50%;
+      height: 100%;
+      font-size: 1.5rem;
+      @include flex(space-evenly, flex-start, column);
+      .text {
+        margin: 1rem;
+      }
+    }
+    .buttons {
+      width: 50%;
+      height: 100%;
+      @include flex(space-evenly, space-between, column);
+      button {
+        margin: 1rem;
+      }
+    }
+  }
+}

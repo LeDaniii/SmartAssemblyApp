@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { ProjectLogDirectionComponent } from './project-log-direction/project-log-direction.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { LogMyPlantsComponent } from './log-my-plants/log-my-plants.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     MainComponent,
     LoginComponent,
     ProjectLogDirectionComponent,
+    LogMyPlantsComponent,
   ],
   imports: [
     BrowserModule,
