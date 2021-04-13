@@ -1,0 +1,88 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.wrappper {
+  @include flex(flex-start, flex-end, column);
+  width: 100%;
+  height: 94%;
+
+  .mat-form-field {
+    // @include flex(center, center, row);
+    width: 75%;
+    font-size: 1.2rem;
+    margin: 1.5rem auto;
+    input {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+  a {
+    @include flex(flex-start, flex-end, row);
+    background: #212121;
+    color: white;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 4px;
+    height: 14rem;
+    .arrow {
+      @include flex(center, center, row);
+      background: #b0bec5;
+      width: 10%;
+      height: 100%;
+    }
+    .info {
+      width: 90%;
+      height: 100%;
+    }
+    .header {
+      @include flex(space-between, center, row);
+      width: 100%;
+      height: 20%;
+      border-bottom: 1px solid white;
+      .header-text {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+      }
+    }
+    .status-wrapper {
+      @include flex(space-between, flex-start, row);
+      height: 80%;
+    }
+    .status {
+      @include flex(space-between, flex-start, column);
+      height: 100%;
+      width: 70%;
+      .status-text {
+        margin: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    .status-color {
+      @include flex(space-between, flex-start, column);
+      height: 100%;
+      width: 30%;
+      .color {
+        height: 1.2rem;
+        width: 50%;
+        margin: 1rem auto;
+      }
+      .closed {
+        background: #12df79;
+      }
+      .open {
+        background: #dfdc12;
+      }
+      .urgent {
+        background: #df1212;
+      }
+    }
+  }
+}

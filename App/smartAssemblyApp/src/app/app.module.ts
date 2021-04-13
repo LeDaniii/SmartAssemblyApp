@@ -17,6 +17,8 @@ import { ProjectLogDirectionComponent } from './project-log-direction/project-lo
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { LogMyPlantsComponent } from './log-my-plants/log-my-plants.component';
+import { LogMachinesComponent } from './log-machines/log-machines.component';
+import { LogListComponent } from './log-list/log-list.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { LogMyPlantsComponent } from './log-my-plants/log-my-plants.component';
     LoginComponent,
     ProjectLogDirectionComponent,
     LogMyPlantsComponent,
+    LogMachinesComponent,
+    LogListComponent,
   ],
   imports: [
     BrowserModule,

@@ -44,8 +44,12 @@
     .buttons {
       width: 50%;
       height: 100%;
+      a {
+        width: 100%;
+      }
       @include flex(space-evenly, space-between, column);
       button {
+        width: 80%;
         margin: 1rem;
       }
     }
