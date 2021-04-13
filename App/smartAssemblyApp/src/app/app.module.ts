@@ -14,9 +14,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { ProjectLogDirectionComponent } from './project-log-direction/project-log-direction.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [AppComponent, AppbarComponent, MainComponent, LoginComponent, ProjectLogDirectionComponent],
+  declarations: [
+    AppComponent,
+    AppbarComponent,
+    MainComponent,
+    LoginComponent,
+    ProjectLogDirectionComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +32,8 @@ import { ProjectLogDirectionComponent } from './project-log-direction/project-lo
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
