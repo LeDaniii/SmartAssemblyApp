@@ -19,6 +19,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { LogMyPlantsComponent } from './log-my-plants/log-my-plants.component';
 import { LogMachinesComponent } from './log-machines/log-machines.component';
 import { LogListComponent } from './log-list/log-list.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -40,6 +45,11 @@ import { LogListComponent } from './log-list/log-list.component';
     MatMenuModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatExpansionModule,
+    MatPaginatorModule,
+    MatCardModule,
+    MatSelectModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

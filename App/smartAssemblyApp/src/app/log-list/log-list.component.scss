@@ -1,0 +1,34 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.sortButtons {
+  margin: 2rem 0 2rem 0;
+  @include flex(space-around, center, row);
+  .ButtonClosedIssue {
+    background: #12df79;
+  }
+  .ButtonOpenIssue {
+    background: #dfdc12;
+  }
+  .ButtonUrgentIssue {
+    background: #df1212;
+  }
+  .sortButton {
+    padding: 0.5rem 2rem;
+  }
+}
+
+.addToDo {
+  .ToDoButtonWrapper {
+    width: 100%;
+    @include flex(center, center, row);
+  }
+  .addToDoButton {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}

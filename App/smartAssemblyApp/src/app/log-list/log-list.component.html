@@ -1,1 +1,65 @@
-<p>log-list works!</p>
+<div class="wrapper">
+  <div class="sortButtons">
+    <button mat-raised-button class="ButtonClosedIssue sortButton">
+      <i class="fas fa-sort-amount-down"></i>
+    </button>
+    <button mat-raised-button class="ButtonOpenIssue sortButton">
+      <i class="fas fa-sort-amount-down"></i>
+    </button>
+    <button mat-raised-button class="ButtonUrgentIssue sortButton">
+      <i class="fas fa-sort-amount-down"></i>
+    </button>
+  </div>
+  <div class="addToDo">
+    <mat-accordion>
+      <mat-expansion-panel
+        (closed)="panelOpenState = false"
+        (opened)="panelOpenState = true"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Add To Do </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "Tab to close" : "Tab to add" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="panelForm">
+          <form>
+            <select
+              class="form-select mb-3"
+              aria-label="Default select example"
+            >
+              <option selected value="1">Urgent</option>
+              <option value="2">Not Urgent</option>
+            </select>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Assembly Unit</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="100-00"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >The Problem</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="ToDoButtonWrapper">
+              <button mat-raised-button color="accent" class="addToDoButton">
+                Add ToDo
+              </button>
+            </div>
+          </form>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
