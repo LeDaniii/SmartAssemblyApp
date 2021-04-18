@@ -5,6 +5,11 @@
   flex-direction: $direction;
 }
 
+.wrapper {
+  width: 95%;
+  margin: auto;
+}
+
 .sortButtons {
   margin: 2rem 0 2rem 0;
   @include flex(space-around, center, row);
@@ -30,5 +35,24 @@
   .addToDoButton {
     width: 90%;
     margin-top: 1rem;
+  }
+}
+
+.projectNumber {
+  margin: 2rem 0 1rem 0;
+  @include flex(center, center, row);
+}
+
+mat-card {
+  .header {
+    width: 100%;
+    border-bottom: 1px solid white;
+    @include flex(space-between, center, row);
+  }
+  .AssemblyUnit {
+    margin-top: 1rem;
+    width: 100%;
+    border-bottom: 1px solid white;
+    @include flex(space-between, center, row);
   }
 }
