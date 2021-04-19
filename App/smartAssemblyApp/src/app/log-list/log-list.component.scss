@@ -50,9 +50,15 @@ mat-card {
     @include flex(space-between, center, row);
   }
   .AssemblyUnit {
-    margin-top: 1rem;
+    // margin-top: 1rem;
     width: 100%;
     border-bottom: 1px solid white;
     @include flex(space-between, center, row);
+  }
+  h3 {
+    margin: 0;
+  }
+  .ShowCommentAccordion {
+    margin-top: 1rem;
   }
 }
