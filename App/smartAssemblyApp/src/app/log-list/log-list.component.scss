@@ -83,6 +83,18 @@ mat-card {
     width: 100%;
     background: linear-gradient(90deg, white, #df1212, #df1212);
   }
+  .status-closed {
+    margin-top: 0.4rem;
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient(90deg, white, #12df79, #12df79);
+  }
+  .status-open {
+    margin-top: 0.4rem;
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient(90deg, white, #dfdc12, #dfdc12);
+  }
   h3 {
     margin: 0;
   }
@@ -112,4 +124,8 @@ mat-card {
     width: 100%;
     margin: 1rem 0 0 0;
   }
+}
+
+.todo {
+  margin-bottom: 1rem;
 }
