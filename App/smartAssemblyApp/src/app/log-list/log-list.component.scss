@@ -27,6 +27,28 @@
   }
 }
 
+.interactButtons {
+  margin: 1rem 0 0 0;
+  @include flex(space-between, center, row);
+  .ButtonClosedIssue {
+    background: #12df79;
+  }
+  .ButtonOpenIssue {
+    background: #dfdc12;
+  }
+  .ButtonUrgentIssue {
+    background: #df1212;
+  }
+  .ButtonMoveToChat {
+    background: #1261df;
+  }
+  .sortButton {
+    padding: 0.5rem 2rem;
+    width: 30%;
+    margin-bottom: 0.4rem;
+  }
+}
+
 .addToDo {
   .ToDoButtonWrapper {
     width: 100%;
@@ -55,10 +77,39 @@ mat-card {
     border-bottom: 1px solid white;
     @include flex(space-between, center, row);
   }
+  .status-urgent {
+    margin-top: 0.4rem;
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient(90deg, white, #df1212, #df1212);
+  }
   h3 {
     margin: 0;
   }
   .ShowCommentAccordion {
     margin-top: 1rem;
+    .comment {
+      padding: 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      h3 {
+        border-bottom: 1px solid white;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.expansionComment {
+  textarea {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+  }
+  .addToDoButton {
+    width: 100%;
+    margin: 1rem 0 0 0;
   }
 }

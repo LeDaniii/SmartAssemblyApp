@@ -39,7 +39,7 @@
                 >Assembly Unit</label
               >
               <input
-                type="email"
+                type="number"
                 class="form-control"
                 id="exampleFormControlInput1"
                 placeholder="100-00"
@@ -80,6 +80,7 @@
         <h3>Assembly Unit</h3>
         <h3>100-10</h3>
       </div>
+      <div class="status-urgent"></div>
       <div class="problem">
         <h3>The Problem</h3>
         <p>
@@ -89,7 +90,7 @@
         </p>
       </div>
       <mat-accordion>
-        <mat-expansion-panel hideToggle>
+        <mat-expansion-panel class="expansionComment" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title> Comment on topic </mat-panel-title>
           </mat-expansion-panel-header>
@@ -106,9 +107,28 @@
             <mat-expansion-panel-header>
               <mat-panel-title> Show Comments </mat-panel-title>
             </mat-expansion-panel-header>
-            <p>This is the primary content of the panel.</p>
+            <div class="comment">
+              <h3>Daniel Matzer</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur consectetur animi aut iure quaerat cupiditate atque
+                tempore officiis molestias. Libero obcaecati repellendus qui
+                iste dolor, aspernatur nihil! Quos, a optio?
+              </p>
+            </div>
           </mat-expansion-panel>
         </mat-accordion>
+      </div>
+      <div class="interactButtons">
+        <button mat-raised-button class="ButtonClosedIssue sortButton">
+          <i class="fas fa-check"></i>
+        </button>
+        <button mat-raised-button class="ButtonOpenIssue sortButton">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button mat-raised-button class="ButtonMoveToChat sortButton">
+          <i class="fas fa-comment"></i>
+        </button>
       </div>
     </mat-card>
   </div>
